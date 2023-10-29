@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="dashboard-top">
+        <button id="restartGame">Restart Game</button>
+        <button id="startGame">Start Game</button>
+      </div>
+      <div class="gameboard">
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+        <div class="x-o"></div>
+      </div>
+      <div class="dashboard-names">
+        <div>
+          <div class="playerName" id="playerName1">Player X ..</div>
+          <input type="text" class="playerInput" placeholder="Type Your Name ...">
+        </div>
+        <div>
+          <div class="playerName" id="playerName2">Player O ..</div>
+          <input type="text" class="playerInput" placeholder="Type Your Name ...">
+        </div>
+      </div>
+      <div class="dashboard-bottem">
+        <div>
+          <div class="names-bottem">Player - X</div>
+           <div class="results" id="player">0</div>
+        </div>
+        <div>
+          <div class="names-bottem">Ties</div>
+          <div class="results" id="ties">0</div>
+        </div>
+        <div>
+          <div class="names-bottem">Computer - O</div>
+          <div class="results" id="computer">0</div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --background-body: #00eabb;
+  --X-O:#f9fbcb;
+  --background-gameboard:#00d4bc;
+  --background-gameborad-hover:#67edc3;
+  --font-color:#328288;
+}
+
+body{
+  background-color: var(--background-body);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.container{
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* dashboard top */
+
+.dashboard-top{
+  display: flex;
+  justify-content: space-around;
+}
+
+.dashboard-top button{
+  all: unset;
+  background-color: var(--background-gameboard);
+  color: var(--X-O);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dashboard-top button:hover{
+  background-color: var(--background-gameborad-hover); 
+}
+.dashboard-top button:active{
+  transform: scale(0.8);
+}
+/* game board */
+
+.gameboard{
+  margin-top: 50px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.x-o{
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-gameboard);
+  color: var(--X-O);
+  cursor: pointer;
+  font-size: 9rem;
+  transition: 0.3s;
+}
+.x-o:hover{
+  background-color: var(--background-gameborad-hover);
+}
+/* dashboard names */
+
+.dashboard-names{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.playerName{
+  font-size: 2rem;
+  color: var(--font-color);
+}
+
+.playerInput{
+  all: unset;
+  background-color: var(--background-gameboard);
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--X-O);
+  font-size: 1.4rem;
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.playerInput:hover{
+  background-color: var(--X-O);
+  color: var(--font-color);
+  transform: scale(1.1);
+}
+
+/* dashboard bottem */
+
+.dashboard-bottem{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.names-bottem{
+font-size: 1.5rem;
+color: var(--font-color);
+}
+
+.results{
+  font-size: 3rem;
+  color: var(--X-O);
+}
+
+/* media qoure */
+
+@media screen and (max-width:500px) {
+  .container{
+    width: 100vw;
+  }
+  .dashboard-top{
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  #restart-game{
+    margin: 10px 0;
+  }
+  .gameboard{
+    width: 100%;
+    height: 40vh;
+  }
+  .x-o{
+    font-size: 7rem;
+  }
+
+  .dashboard-bottem{
+    flex-direction: column;
+  }
+}

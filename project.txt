@@ -1,0 +1,8 @@
+1 => setup html and css
+2 => check win or not and for a tie too 
+3 => name and show who win and خلي اسم لي على يسار ثابت على x
+اظهر نتيجة بعد فوز كل واحد منهم الى حتى 3 وبعدين اظهر فائز
+4 => 
+
+اختياري
+5 => اذا تقدر تزيد تحدي تخدم AI بوت ضدك
